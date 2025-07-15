@@ -26,5 +26,5 @@ A responsive and interactive quiz application built with React. Users can test t
 
 ---
 
-## 📁 Folder Structure
+
 
