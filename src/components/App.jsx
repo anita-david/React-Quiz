@@ -56,7 +56,7 @@ function reducer(state, action) {
     case "nextQuestion":
       return {
         ...state,
-        index: state.index++,
+        index: state.index + 1,
         answer: null,
       };
     case "finish":
@@ -75,8 +75,8 @@ function reducer(state, action) {
     case "tick":
       return {
         ...state,
-        secondsRemaining: state.secondsRemaining--,
-        status: state.secondsRemaining === 0 ? "finished" : state.status,
+        secondsRemaining: state.secondsRemaining - 1,
+        status: state.secondsRemaining === 1 ? "finished" : state.status,
       };
     default:
       throw new Error("Unknown action");
